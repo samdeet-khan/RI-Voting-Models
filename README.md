@@ -58,7 +58,6 @@ RI-Voting-Models/
      ```bash
      conda create -n ri_voting python=3.9
      conda activate ri_voting
-     pip install -r environment/requirements.txt
      ```
    - Follow additional setup instructions in `environment/setup_instructions.md`.
 
