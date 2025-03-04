@@ -1,0 +1,23 @@
+Q1: Ward
+Q2: Age Group
+Q3: Gender Identity
+Q4: Marital status (7 blank)
+Q5: Ethnicity (16 blank)
+Q6: Religion (20 blank)
+Q7: Education level (9 blank)
+Q8: Annual Household Income (19 blank)
+Q9: Political Affiliation (18 blank)
+Q10: Stance on United States' Overall Direction (19 blank)
+Q11: Stance on Rhode Island's Overall Direction (18 blank)
+Q12: Presidential Vote (26 blank)
+Q13: Excitement about Presidential Vote (17 blank)
+Q14: Confidence in RI Politician Care (13 blank)
+Q15: Confidence in RI Politician Local Election Management (14 blank)
+Q16: Confidence in Results Accurately Reflecting Cast Votes (17 blank)
+Q17: Info Source(s) for Voting Options (38 blank)
+Q18: Reason(s) for Voting In-Person (25 blank)
+
+-----
+
+Q19: Support for same day voter registration (20 blank)
+Q20: Support for ranked choice voting (21 blank)
