@@ -1,0 +1,192 @@
+﻿Q1: Ward # (One-Hot)
+Which ward is this survey from?
+* 1
+* 3
+* 5
+* 6
+* 7
+* 8
+* 9
+* 11
+* 12
+* 14
+* 15
+
+
+Q2: Age (Ordinal)
+What is your age group? 
+* 18-24 → 1
+* 25-29 → 2
+* 30-39 → 3
+* 40-49 → 4
+* 50-64 → 5
+* 65+ → 6
+
+
+Q3: Gender ID (One-Hot)
+What is your gender identity?
+* Male 
+* Female
+* Non-binary 
+* Prefer not to say 
+
+
+Q4: Marital Status (Binary)
+What is your marital status? 
+* Married → 1
+* Not married → 0
+
+
+Q5: Ethnicity (Multi-Hot)
+With what ethnicity or race(s) do you most identify? (Check all that apply) 
+* White (1/0)
+* Black or African American (1/0)
+* Hispanic or Latino/a (1/0)
+* Asian (1/0)
+* American Indian or Alaska Native (1/0)
+* Native Hawaiian or Pacific Islander (1/0)
+* Other (1/0)
+
+
+Q6: Religion (One-Hot)
+What is your religious affiliation?
+* Atheist
+* Buddhism
+* Catholicm
+* Hinduism
+* Islam
+* Judaism
+* None
+* Other
+* Protestant/Other Christian Denomination
+
+
+Q7: Education Level (Ordinal)
+What is your highest level of education?
+* Less than high school → 1
+* High School Diploma/GED → 2
+* Some college → 3
+* 2 year degree → 4
+* 4 year degree → 5
+* Professional degree → 6
+* Doctorate → 7
+
+
+Q8: Household Income (Ordinal)
+What is your annual household income?
+* Less than $30,000 → 1
+* $30,000 - $49,999 → 2
+* $50,000 - $100,000 → 3
+* $100,000 - $199,999 → 4
+* More than $200,000 → 5
+
+
+Q9: Political Affiliation (One-Hot)
+How would you describe your political affiliation?
+* Democrat
+* Republican
+* Independent
+* Other third party
+
+
+Q10: Opinion about Current Direction of US (Ordinal) 
+Overall, do you feel that the country is heading in the right direction or the wrong direction? [5 attributes]
+* Definitely Wrong → 1
+* Somewhat Wrong → 2
+* Unsure → 3
+* Somewhat Right → 4
+* Definitely Right → 5
+
+
+Q11: Opinion about Current Direction of RI (Ordinal)
+Overall, do you feel that Rhode Island is heading in the right direction or the wrong direction?
+* Definitely Wrong → 1
+* Somewhat Wrong → 2
+* Unsure → 3
+* Somewhat Right → 4
+* Definitely Right → 5
+
+
+Q12: Presidential Vote (One-Hot)
+Who did you vote for President?
+* Donald Trump
+* Kamala Harris
+* Other
+
+
+Q13: Excitement about Vote (Ordinal)
+Were you excited to vote for your presidential candidate?
+* Not at all excited → 1
+* Not very excited → 2
+* Somewhat excited → 3
+* Very excited → 4
+* Extremely excited → 5
+
+
+Q14: Confidence in RI Politicians’ Care (Ordinal)
+How confident are you that your Rhode Island politicians care about you?
+* Not at all confident → 1
+* Not very confident → 2
+* Unsure → 3
+* Somewhat confident → 4
+* Very confident → 5
+
+
+Q15: Confidence in Local Voting Officials’ Election Management (Ordinal)
+How confident are you in the ability of local voting officials to manage elections fairly and accurately?
+* Not at all confident → 1
+* Not very confident → 2
+* Unsure → 3
+* Somewhat confident → 4
+* Very confident → 5
+
+
+Q16: Confidence in Accuracy of National Votes Cast (Ordinal)
+How confident are you that the results of the national presidential election will accurately reflect the votes cast?
+* Not at all confident → 1
+* Not very confident → 2
+* Unsure → 3
+* Somewhat confident → 4
+* Very confident → 5
+
+
+Q17: Voting Options References (Multi-Hot)
+Where do you primarily get your information about voting options, such as precinct locations, voting times, early voting, and mail-in ballot options? (Select all that apply)
+* Rhode Island Secretary of State's Website
+* Social Media
+* Friends/Family
+* Religious/Community Organizations
+* The Voter Information Handbook sent to my house
+* 211 Voter Hotline
+
+
+Q18: Reason for Voting In-Person (Multi-Hot)
+Why did you choose to vote in-person on election day? (Select all that apply)
+* Today was the best option for my schedule
+* I wanted to wait to learn more about the candidates
+* I did not feel like I had all the information necessary to vote early or by mail
+* I prefer voting on election day
+* I forgot to vote early or by mail
+* I do not trust mail-in voting
+
+
+
+
+
+
+Q19: Same-Day Voter Registration Support (Ordinal)
+Would you support Rhode Island implementing same day voter registration, allowing unregistered voters to both register and vote on election day?
+* Definitely Not → 1
+* Probably Not → 2
+* I would need more information to make a decision → 3
+* Probably → 4
+* Definitely → 5
+
+
+Q20: Ranked Choice Voting Support (Ordinal)
+Would you support Rhode Island implementing ranked choice voting? This would allow voters to rank candidates in order of preference. 
+* Definitely Not → 1
+* Probably Not → 2
+* I would need more information to make a decision → 3
+* Probably → 4
+* Definitely → 5
