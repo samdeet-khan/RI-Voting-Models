@@ -1,7 +1,6 @@
 # RI‑Voting‑Models 📊🗳️
 
-Data‑science experiments on Rhode Island voters’ support for two election‑reform
-policies:
+Data‑science experiments conducted by the Analytics team at Brown Every Vote Counts to assess Rhode Island voters’ support for two election‑reform policies:
 
 | Policy | Notebook | Script | Question ID |
 |--------|----------|--------|-------------|
@@ -9,8 +8,7 @@ policies:
 | **Ranked‑Choice Voting (RCV)** | `notebooks/03_rf_rcv.ipynb` | `src/models/train_random_forest.py --policy rcv` | Q20 |
 | **Ordinal comparison (SDR + RCV)** | `notebooks/01_ordinal_sdr_rcv.ipynb` | `src/models/ordinal.py` | Q19 + Q20 |
 
-The goal is to uncover which demographics, attitudes, and behaviors best
-predict support for each policy.
+The goal of the project was to uncover which demographics, attitudes, and behaviors best predict support for each policy.
 
 ---
 
