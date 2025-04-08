@@ -9,7 +9,7 @@ policies:
 | **Ranked‑Choice Voting (RCV)** | `notebooks/03_rf_rcv.ipynb` | `src/models/train_random_forest.py --policy rcv` | Q20 |
 | **Ordinal comparison (SDR + RCV)** | `notebooks/01_ordinal_sdr_rcv.ipynb` | `src/models/ordinal.py` | Q19 + Q20 |
 
-The goal is to uncover which demographics, attitudes, and behaviours best
+The goal is to uncover which demographics, attitudes, and behaviors best
 predict support for each policy.
 
 ---
