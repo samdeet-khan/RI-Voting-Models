@@ -1,87 +1,95 @@
-# RI-Voting-Models
+# RI‑Voting‑Models 📊🗳️
 
-This repository contains analytics projects focused on Rhode Island voter preferences. Currently, there are two projects:
+Data‑science experiments on Rhode Island voters’ support for two election‑reform
+policies:
 
-- **Project 1:** Support for Same-Day Voter Registration (Q19 in our 2024 presidential election survey data)  
-- **Project 2:** Support for Ranked Choice Voting (Q20 in our 2024 presidential election-day survey data)
+| Policy | Notebook | Script | Question ID |
+|--------|----------|--------|-------------|
+| **Same‑Day Voter Registration (SDR)** | `notebooks/02_rf_sdr.ipynb` | `src/models/train_random_forest.py --policy sdr` | Q19 |
+| **Ranked‑Choice Voting (RCV)** | `notebooks/03_rf_rcv.ipynb` | `src/models/train_random_forest.py --policy rcv` | Q20 |
+| **Ordinal comparison (SDR + RCV)** | `notebooks/01_ordinal_sdr_rcv.ipynb` | `src/models/ordinal.py` | Q19 + Q20 |
 
-Both projects aim to identify which factors (demographics, political affiliation, confidence, etc.) predict support for these voting policies, using a shared survey dataset.
+The goal is to uncover which demographics, attitudes, and behaviours best
+predict support for each policy.
 
-## Repository Structure
+---
+
+## Directory map
 
 ```text
-RI-Voting-Models/
-├── LICENSE                  - Open-source license file
-├── README.md                - This file
-├── .gitignore               - Specifies files/directories to ignore in version control
-├── raw_data/                - Folder for raw datasets
-│   └── survey_data.csv      - The original survey dataset
-├── docs/                    - Documentation (project overviews, meeting notes, etc.)
-│   ├── pj1_one_pager.pdf    - One-page overview for Project 1
-│   └── pj2_one_pager.pdf    - One-page overview for Project 2
-├── environment/             - Environment setup files
-├── requirements.txt         - List of Python dependencies
-├── setup_instructions.md    - Instructions for installing Conda and dependencies
-├── pj1_same_day_registration/
-│   ├── notebooks/
-│   │   ├── data_cleaning.ipynb        - Data cleaning and preprocessing
-│   │   ├── exploratory_analysis.ipynb - Exploratory data analysis (EDA)
-│   │   └── model_training.ipynb       - Prototyping and training predictive models
-│   ├── src/
-│   │   ├── data_preparation.py   - Functions for data cleaning and encoding
-│   │   ├── train_model.py         - Script for model training (including cross-validation)
-│   │   └── evaluate_model.py      - Functions for model evaluation (accuracy, F1-score, etc.)
-│   └── results/                   - Output files, figures, and evaluation metrics
-└── pj2_ranked_choice_voting/
-    ├── notebooks/
-    │   ├── data_cleaning.ipynb        - Data cleaning and preprocessing
-    │   ├── exploratory_analysis.ipynb - Exploratory data analysis (EDA)
-    │   └── model_training.ipynb       - Prototyping and training predictive models
-    ├── src/
-    │   ├── data_preparation.py   - Functions for data cleaning and encoding
-    │   ├── train_model.py         - Script for model training (including cross-validation)
-    │   └── evaluate_model.py      - Functions for model evaluation (accuracy, F1-score, etc.)
-    └── results/                   - Output files, figures, and evaluation metrics
-```
+RI‑Voting‑Models/
+│
+├── .gitignore
+├── environment.yml         ← reproducible Conda environment
+├── LICENSE                 ← MIT
+├── README.md               ← you’re here
+│
+├── notebooks/              ← narrative analysis & visuals
+│   ├── 01_ordinal_sdr_rcv.ipynb
+│   ├── 02_rf_sdr.ipynb
+│   └── 03_rf_rcv.ipynb
+│
+├── src/                    
+│   ├── __init__.py
+│   └── models/
+│        ├── utils.py
+│        ├── train_random_forest.py   ← one CLI script: --policy sdr|rcv
+│        └── ordinal.py              ← CLI script for ordinal‑logit models
+│
+├── models/                 ← stores ordinal regression and random forest model outputs in .pkl format
+│   └── README.md          
+│
+└── reports/
+    └── Data‑Driven_Insights_Voter_Support.pdf
 
-## Setup Instructions
+---
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/<username>/RI-Voting-Models.git
-   cd RI-Voting-Models
-   ```
+## Quick-start (local)
 
-2. **Set Up the Environment**
-   - Install Miniconda or Anaconda.
-   - Create and activate a Conda environment:
-     ```bash
-     conda create -n ri_voting python=3.9
-     conda activate ri_voting
-     ```
-   - Follow additional setup instructions in `environment/setup_instructions.md`.
+> **Prerequisites:** Conda ≥ 4.10 installed
 
-3. **Launch Jupyter Notebook**
-   ```bash
-   jupyter notebook
-   ```
-   - Navigate to either `pj1_same_day_registration/notebooks` or `pj2_ranked_choice_voting/notebooks` to begin your analysis.
+```bash
+# 1. Clone the repo
+git clone https://github.com/<your-org>/RI-Voting-Models.git
+cd RI-Voting-Models
 
-## How to Contribute
+# 2. Duplicate the environment
+conda env create -f environment.yml
+conda activate ri_voting_models
 
-- **Branch & Pull Request Workflow**:
-  - Create a new branch for your changes.
-  - Commit your changes with descriptive messages.
-  - Open a pull request for review and merge into the main branch.
+# 3. (Optional) Run a smoke-test – train a random forest model
+python -m src.models.train_random_forest \
+       --csv data/raw/survey_data.csv \
+       --policy sdr \
+       --model models/rf_sdr.pkl
 
-- **Coding Guidelines**:
-  - Use the notebooks for prototyping and interactive exploration.
-  - Refactor stable, reusable code into the `src/` directory.
-  - Follow consistent file naming conventions and document your code.
+---
 
-- **Reporting Issues**:
-  - Use GitHub Issues to report bugs, request features, or ask questions.
+## Re-generate Models
 
-## Contact
+You can retrain and save each model using the following commands:
 
-For any questions or issues, please contact [samdeet_khan@brown.edu](mailto:samdeet_khan@brown.edu) or reach out via Slack. Thanks!
+### Same-Day Registration – Random Forest
+
+```bash
+python -m src.models.train_random_forest \
+       --csv raw_data/survey_data.csv \
+       --policy sdr \
+       --model models/rf_sdr.pkl
+
+### Ranked Choice Voting – Random Forest
+
+```bash
+python -m src.models.train_random_forest \
+       --csv raw_data/survey_data.csv \
+       --policy rcv \
+       --model models/rf_rcv.pkl
+
+### Ordinal Regression Model (Both Policies)
+
+```bash
+python -m src.models.ordinal \
+       --csv raw_data/survey_data.csv \
+       --save models/ordinal.pkl
+
+For questions, feel free to reach out: samdeet_khan@brown.edu
