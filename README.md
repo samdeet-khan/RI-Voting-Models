@@ -17,15 +17,24 @@ The goal of the project was to uncover which demographics, attitudes, and behavi
 ```text
 RI‑Voting‑Models/
 │
-├── .gitignore
-├── environment.yml         ← reproducible Conda environment
-├── LICENSE                 ← MIT
-├── README.md               ← you’re here
+├── docs/
+    └── Data‑Driven_Insights_Voter_Support.pdf            ← final report
+│
+├── figures/                 ← graphs from final report that show relationships between significant features and support for election-reform policies   
+│   ├── ranked_choice_voting
+│   └── same_day_registration
+│
+├── models/                 ← stores ordinal regression and random forest model outputs in .pkl format
+│   └── README.md          
 │
 ├── notebooks/              ← narrative analysis & visuals
 │   ├── 01_ordinal_sdr_rcv.ipynb
 │   ├── 02_rf_sdr.ipynb
 │   └── 03_rf_rcv.ipynb
+│
+├── raw_data/                 ← raw exit polling dataset collected on Election Day 2024 and variable definitions
+│   ├── survey_dataset.csv
+|   └── variables_def.txt
 │
 ├── src/                    
 │   ├── __init__.py
@@ -34,11 +43,10 @@ RI‑Voting‑Models/
 │        ├── train_random_forest.py   ← one CLI script: --policy sdr|rcv
 │        └── ordinal.py              ← CLI script for ordinal‑logit models
 │
-├── models/                 ← stores ordinal regression and random forest model outputs in .pkl format
-│   └── README.md          
-│
-└── reports/
-    └── Data‑Driven_Insights_Voter_Support.pdf
+├── LICENSE                 ← MIT
+├── README.md               ← you’re here
+└── environment.yml         ← reproducible Conda environment
+
 ```
 ---
 
