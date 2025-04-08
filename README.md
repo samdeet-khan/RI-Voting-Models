@@ -41,7 +41,7 @@ RI‑Voting‑Models/
 │
 └── reports/
     └── Data‑Driven_Insights_Voter_Support.pdf
-
+```
 ---
 
 ## Quick-start (local)
@@ -56,13 +56,7 @@ cd RI-Voting-Models
 # 2. Duplicate the environment
 conda env create -f environment.yml
 conda activate ri_voting_models
-
-# 3. (Optional) Run a smoke-test – train a random forest model
-python -m src.models.train_random_forest \
-       --csv data/raw/survey_data.csv \
-       --policy sdr \
-       --model models/rf_sdr.pkl
-
+```
 ---
 
 ## Re-generate Models
@@ -76,7 +70,7 @@ python -m src.models.train_random_forest \
        --csv raw_data/survey_data.csv \
        --policy sdr \
        --model models/rf_sdr.pkl
-
+```
 ### Ranked Choice Voting – Random Forest
 
 ```bash
@@ -84,12 +78,15 @@ python -m src.models.train_random_forest \
        --csv raw_data/survey_data.csv \
        --policy rcv \
        --model models/rf_rcv.pkl
-
+```
 ### Ordinal Regression Model (Both Policies)
 
 ```bash
 python -m src.models.ordinal \
        --csv raw_data/survey_data.csv \
        --save models/ordinal.pkl
+```
 
-For questions, feel free to reach out: samdeet_khan@brown.edu
+---
+
+For questions about this project, feel free to reach out: samdeet_khan@brown.edu
