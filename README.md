@@ -4,7 +4,7 @@ Data science experiments conducted by the **Analytics team at Brown Every Vote C
 
 ---
 
-## Project Team
+## Team
 
 | Role | Member |
 |------|--------|
