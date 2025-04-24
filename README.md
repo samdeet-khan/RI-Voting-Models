@@ -1,12 +1,12 @@
 # RI-Voting-Models 📊🗳️
 
-Data science experiments conducted by the Analytics team at Brown Every Vote Counts to assess Rhode Island voters’ support for two election-reform policies: Same-Day Voter Registration and Ranked-Choice Voting.
+Data science experiments conducted by the Analytics team at Brown Every Vote Counts to assess Rhode Island voters’ support for two election-reform policies: Same-Day Voter Registration (SDR) and Ranked-Choice Voting (RCV).
 
-| Policy | Notebook | Script | Question ID |
+| ML Model | Notebook | Script | Question ID |
 |--------|----------|--------|-------------|
-| **Same-Day Voter Registration (SDR)** | `notebooks/02_rf_sdr.ipynb` | `src/models/train_random_forest.py --policy sdr` | Q19 |
-| **Ranked-Choice Voting (RCV)** | `notebooks/03_rf_rcv.ipynb` | `src/models/train_random_forest.py --policy rcv` | Q20 |
-| **Ordinal comparison (SDR + RCV)** | `notebooks/01_ordinal_sdr_rcv.ipynb` | `src/models/ordinal.py` | Q19 + Q20 |
+| **Random Forest (SDR)** | `notebooks/02_rf_sdr.ipynb` | `src/models/train_random_forest.py --policy sdr` | Q19 |
+| **Random Forest (RCV)** | `notebooks/03_rf_rcv.ipynb` | `src/models/train_random_forest.py --policy rcv` | Q20 |
+| **Ordinal Regression (SDR + RCV)** | `notebooks/01_ordinal_sdr_rcv.ipynb` | `src/models/ordinal.py` | Q19 + Q20 |
 
 The goal of the project was to uncover which demographics, attitudes, and behaviors best predict support for each policy.
 
