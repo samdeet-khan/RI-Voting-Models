@@ -93,3 +93,13 @@ python -m src.models.ordinal \
 ```
 
 ---
+
+## Project Team
+
+| Role | Member |
+|------|--------|
+| **Analytics Lead** | Samdeet Khan (<samdeet_khan@brown.edu>) |
+| **Research Supervisor** | Benjamin Buka (<benjamin_buka@brown.edu>) |
+| **Analysts** | Zhaocheng Yang • Jason McDermott • Evan Luo • Caleb Schultz • Kevin Pan • Alexander Wang • Jason Boek |
+
+---
