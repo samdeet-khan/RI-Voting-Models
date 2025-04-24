@@ -8,9 +8,9 @@ Data science experiments conducted by the **Analytics team at Brown Every Vote C
 
 | Role | Member |
 |------|--------|
-| **Analytics Lead** | **Samdeet Khan** (<samdeet_khan@brown.edu>) |
-| **Research Supervisor** | **Benjamin Buka** (<benjamin_buka@brown.edu>) |
-| Analysts | Zhaocheng Yang • Jason McDermott • Evan Luo • Caleb Schultz • Kevin Pan • Alexander Wang • Jason Boek |
+| **Analytics Lead** | Samdeet Khan (<samdeet_khan@brown.edu>) |
+| **Research Supervisor** | Benjamin Buka (<benjamin_buka@brown.edu>) |
+| **Analysts** | Zhaocheng Yang • Jason McDermott • Evan Luo • Caleb Schultz • Kevin Pan • Alexander Wang • Jason Boek |
 
 ---
 
