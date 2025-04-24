@@ -14,6 +14,8 @@ Data science experiments conducted by the **Analytics team at Brown Every Vote C
 
 ---
 
+## Election-Reform Policies
+
 | Policy | Notebook | Script | Question ID |
 |--------|----------|--------|-------------|
 | **Same-Day Voter Registration (SDR)** | `notebooks/02_rf_sdr.ipynb` | `src/models/train_random_forest.py --policy sdr` | Q19 |
