@@ -2,20 +2,6 @@
 
 Data science experiments conducted by the **Analytics team at Brown Every Vote Counts** to assess Rhode Island voters’ support for two election-reform policies: **Same-Day Voter Registration** and **Ranked-Choice Voting**.
 
----
-
-## Team
-
-| Role | Member |
-|------|--------|
-| **Analytics Lead** | Samdeet Khan (<samdeet_khan@brown.edu>) |
-| **Research Supervisor** | Benjamin Buka (<benjamin_buka@brown.edu>) |
-| **Analysts** | Zhaocheng Yang • Jason McDermott • Evan Luo • Caleb Schultz • Kevin Pan • Alexander Wang • Jason Boek |
-
----
-
-## Election-Reform Policies
-
 | Policy | Notebook | Script | Question ID |
 |--------|----------|--------|-------------|
 | **Same-Day Voter Registration (SDR)** | `notebooks/02_rf_sdr.ipynb` | `src/models/train_random_forest.py --policy sdr` | Q19 |
