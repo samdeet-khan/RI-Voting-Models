@@ -1,6 +1,6 @@
 # RI-Voting-Models 📊🗳️
 
-Data science experiments conducted by the **Analytics team at Brown Every Vote Counts** to assess Rhode Island voters’ support for two election-reform policies: **Same-Day Voter Registration** and **Ranked-Choice Voting**.
+Data science experiments conducted by the Analytics team at Brown Every Vote Counts to assess Rhode Island voters’ support for two election-reform policies: Same-Day Voter Registration and Ranked-Choice Voting.
 
 | Policy | Notebook | Script | Question ID |
 |--------|----------|--------|-------------|
